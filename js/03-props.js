@@ -9,7 +9,10 @@
 // const username = 'Mango';
 // const userEmail = 'mango@mail.com';
 
-// const credentials = {};
+// const credentials = {
+//   username,
+//   userEmail,
+// };
 
 // console.log(credentials);
 
@@ -21,6 +24,8 @@
 // const inputName = 'color';
 // const inputValue = 'rgb(0,0,0)';
 
-// const colorPicker = {};
+// const colorPicker = {
+//   [inputName]: inputValue,
+// };
 
 // console.log(colorPicker);

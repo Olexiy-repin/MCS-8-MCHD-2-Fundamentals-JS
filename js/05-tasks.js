@@ -10,16 +10,42 @@ TODO: - виводить вміст об'єкта user у форматі клю�
 //   name: 'Mango',
 //   age: 20,
 //   hobby: 'html',
-//   premium: true,
+//   premium: false,
 // };
 
 // console.log('user:', user);
+
+// user.mood = 'happy';
+// user.hobby = 'skydiving';
+// user.premium = !user.premium;
+
+// console.log('user:', user);
+
+// const userKeys = Object.keys(user);
+
+// console.log('userKeys:', userKeys);
+
+// for (const key of userKeys) {
+//   console.log(`${key}: ${user[key]}`);
+// }
 
 //TODO: Зведіть у квадрат кожен елемент цього об'єкта.
 
 // const coordinates = { x: 2, y: 3, z: 4 };
 
-// console.log(coordinates);
+// console.log('coordinates:', coordinates);
+
+// const coordinatesKeys = Object.keys(coordinates);
+
+// console.log('coordinatesKeys:', coordinatesKeys);
+
+// // ['x', 'y', 'z']
+
+// for (const key of coordinatesKeys) {
+//   coordinates[key] = coordinates[key] ** 2;
+// }
+
+// console.log('coordinates:', coordinates);
 
 /*
 TODO: У нас є об'єкт, де зберігаються зарплати нашої команди. Напишіть код для
@@ -27,12 +53,22 @@ TODO: підсумовування всіх зарплат і збережіть
 TODO: Повинно вийти 390. Якщо об'єкт salaries порожній, то результат має бути 0.
 */
 
-// const salaries = {
-//   John: 100,
-//   Ann: 160,
-//   Pete: 130,
-// };
+const salaries = {
+  John: 100,
+  Ann: 160,
+  Pete: 130,
+};
 
-// console.log('salaries:', salaries);
+console.log('salaries:', salaries);
 
-// let totalSalary = 0;
+let totalSalary = 0;
+
+const salariesValues = Object.values(salaries);
+
+console.log('salariesValues:', salariesValues);
+
+for (const value of salariesValues) {
+  totalSalary += value;
+}
+
+console.log('totalSalary:', totalSalary);

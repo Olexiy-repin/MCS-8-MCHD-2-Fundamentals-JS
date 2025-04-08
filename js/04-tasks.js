@@ -151,6 +151,10 @@ TODO: В параметр letter будуть передавати рядок і
 TODO: Якщо літера знаходиться у верхньому регістрі, то буде повертатися 'upper case' інакше 'lower case'.
 */
 
+// const checkCaseOfLetter = function (letter) {
+//   return letter.toUpperCase() === letter ? 'upper case' : 'lower case';
+// };
+
 // console.log(checkCaseOfLetter('a')); // 'lower case'
 // console.log(checkCaseOfLetter('A')); // 'upper case'
 
@@ -159,7 +163,15 @@ TODO: Напиши функцію changeCaseOfLetters(str), яка буде по
 TODO: В параметр str будуть передавати рядок.
 */
 
-// const changeCaseOfLetters = function(str) {}
+// const changeCaseOfLetters = function (str) {
+//   let resultStr = '';
+
+//   for (const char of str) {
+//     resultStr += char.toUpperCase() === char ? char.toLowerCase() : char.toUpperCase();
+//   }
+
+//   return resultStr;
+// };
 
 // console.log(changeCaseOfLetters('AbCdE')); // aBcDe
 // console.log(changeCaseOfLetters('abc')); // ABC
